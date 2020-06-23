@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 2 prac</title>
+</head>
+<body>
+    <script>
+//         let anikanString = "hello, i am Anakin"
+//         vaderString = anikanString.replace("Anakin","Darth Vader");
+//         console.log(vaderString)
+
+// const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+// const regex = /dog/gi;
+// console.log(p.replace(regex, 'ferret'));
+// console.log(p.replace('dog', 'monkey'));
+
+// listof = ['one', 'two','three', 'four', 'five'];
+// console.log(listof.indexOf('two'));
+// console.log(listof.reverse())
+// console.log(listof.sort())
+// console.log(Array.isArray(listof))
+
+
+// const beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+// console.log(beasts.indexOf('bison'));
+// console.log(beasts.indexOf('bison', 2));
+// console.log(beasts.indexOf('giraffe'));
+
+
+// let anakin = {
+//     name:'Anakin',
+//     lightsaber: {
+//         color:'red',
+//     },
+//     title:'General Skywaler',
+//     padawan:'Asoka Tano'
+// }
+// object.is(anakin,anakin)   
+
+// -------1 Medium prob---------
+
+// let madLib = function(name,subject) {
+//     console.log(name,"'s favorite subject is", subject)
+// }
+// madLib("Mike", "lunch")
+
+// -------2 Medium prob tip amount---------
+// total = 100;
+// good = 1.20;
+// fair = 1.15;
+// poor = 1.10;
+// tipAmount = "";
+// switch (tipAmount) {
+//     case good:
+//         console.log(total * good);
+//         break;
+//     case fair:
+//         console.log(total * fair);
+//         break;
+//     case poor: 
+//         console.log(total * poor);
+//         break;
+//     default:
+//         break;
+// }
+// console.log(tipAmount)
+
+// -------3 Medium prob amound---------
+
+// for loop
+// for (let i = 1; i < 100; i++) {
+//     if (i < 100) {
+//       console.log(i);
+//     }
+//   }
+
+// while loop
+// let i = 1;
+// while (i < 100) {
+//   if(i < 100) {
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+// -------4 Medium prob square---------
+
+// squareBox();
+// function squareBox() {
+//     var numCol = 10; 
+//     var numRows = 5;
+//     for(var i=1; i<= numRows; i++) {
+//         for(var j=1; j<numCol; j++) {
+//             document.write("*");
+//         }
+//         document.write("<br>");
+//     }
+// }
+// console.log(squareBox);
+
+// -------4 Medium prob hollow square---------
+
+// n = 5;
+// for (i=1;i<=n;j++){
+//     for(j=1;j<=n;j++){
+//         if(i==1 || i == n|| j == n|| j==n)
+//         docutment.write("*");
+//         else;
+//         document.write("<br>")
+//     }
+// }
+
+
+// --------for each notes----------------
+// let starWarsNames = ['Luke', 'Leia', 'chewy', 'yoda', 'jarjar']
+// starWarsNames.forEach(function(name){
+//     console.log(name)
+// })
+// const callback = (item,index)=>{
+//     console.log(`${index}.${item}`)
+// }
+// ['Luke', 'Leia', 'chewy', 'yoda', 'jarjar'].forEach(callback)
+// // same as above but in individual call back
+// callback("Luke",0)
+
+// function helloIam = (name, index) = {
+    
+// }
+// for(let i = 0; i < starWarsNames.length; i++){
+//     callback(starWarsNames[i], i, starWarsNames)
+
+// let myNames = ['dave', 'bill', 'mike', 'chip', 'skip']
+// ['dave', 'bill', 'mike', 'chip', 'skip'].forEach(callback)
+// starWarsNames.forEach(name => console.log(`${name} is in star wars.`))
+
+// let newCallback = (name,idx) => {
+//     let res = Object.assign({}, template);
+//     res.name = name;
+//     if(name == 'chewy' || name == 'jarjar'){
+//         res.height = 'tall'
+//     } else if(name == 'yoda'){
+//         res.height = 'short'
+//     }
+//     name == 'jar jar' ? res.side = 'dark': null
+//     starWarsNames[idx] = res
+
+// my example
+// let myNames = ['dave', 'bill', 'mike', 'chip', 'skip']
+// myNames.forEach(name => console.log(`${name} is my pal.`))
+
+// let callYou = (name,idx) => {
+//     let hey = Object.assign({}, template);
+//     hey.name = name;
+//     if(name = 'mike' || name == 'dave') {
+//         hey.height = 'short'
+//     } else if (name == 'chip'){
+//         hey.height = 'tall'
+//     }
+//     name == 'dave' ? hey.side = 'cool dude': null
+//     myNames[idx] = hey
+// }
+
+
+// clint's examp--------
+// let results = starWarsNames.map((char, indx) => {
+//     return {
+//         name: 'name',
+//         inStarWars: true
+//     }
+// })
+// console.log(starWarsNames.map(name=> `${name} is a person`))
+// console.log(starWarsNames.map(name=> `${name}/`.repeat(100).split("/", 100)))
+// let out = Object.assign({name:'bob'}, {foo:'bar'})
+
+// 1. for each examples-----------------------
+// function titleCase(str) {
+//   return str.toLowerCase().split(' ').map(function(word) {
+//     return word.replace(word[0], word[0].toUpperCase());
+//   }).join(' ');
+// }
+// console.log(titleCase("hello my name is mike."));
+
+// const paragraph = 'The quick brown fox jumps over the lazy dog. It barked.';
+// const regex = /[A-Z]/g;
+// const found = paragraph.match(regex);
+
+// console.log(found);
+
+//2. for each examples--------------------------
+// const foo = ['new', 'nerf', 'mike', 'zulu', 'alpha'];
+// console.log(foo.sort()); 
+
+//3. for each examples
+// const array1 = [5, 12, 8, 130, 44];
+// const findFunc = (ar, compare) => ar.find(e=> e>compare)
+// console.log(findFunc(array1,44))
+
+// const found = array1.find(element => element > 10);
+// console.log(found);
+
+//4. for each examples
+
+// const o1 = { a: 1 };
+// const o2 = { b: 2 };
+// const o3 = { c: 3 };
+
+// const obj = Object.assign(o1, o2, o3);
+// console.log(obj); 
+// console.log(o1); 
+
+// ----------small exer-----------------------
+
+function lvl1exercise1 () {
+  // Declare a variable without instantiating it and return it!
+var mySelf = {};
+}
+
+function lvl1exercise2 () {
+  // Declare and instantiate a number and return it
+let thisEx = 12
+console.log(thisEx)
+}
+
+function lvl1exercise3 () {
+  // Declare and instantiate a floating point number that is not a whole number and return it
+let thisFloat = 12.5
+console.log(thisFloat)
+}
+
+function lvl1exercise4 () {
+  // Declare and instantiate a string "Hello World!" and return it
+let str = "Hello World!";
+console.log(str)
+}
+
+function lvl1exercise5 () {
+  // Declare and instantiate an array containing the string "Hello World!" and the number 4 and return it
+let strNum = ["Hello World", 4];
+console.log(strNum)
+}
+
+function lvl1exercise6 () {
+  // Declare and instantiate an object containing the key-value pairs key1 -> "Hello World!" and key2 -> 4, and return it
+let greeting = {
+    key1: "Hello World!",
+    key2: 4
+
+}
+console.log(greeting)
+}
+
+function lvl1exercise7 () {
+  // Declare and instantiate a boolean value 'false' and return it
+let val = false;
+console.log(val)
+}
+
+</script>
+</body>
+</html>
